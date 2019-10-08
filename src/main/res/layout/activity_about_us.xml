@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:background="#1d428a"
+    android:id="@+id/aboutLayout">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="314dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#c8102e"
+        android:gravity="center"
+        android:text="The National Basketball Association, or NBA, is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world.\nThroughout the years, the NBA has grown and changed as new rules were introduced (such as the addition of the three-point shot in 1979), including changes made both on and off the court. Unlike the other major three professional sports teams in the US (MLB, the NFL, and the NHL), the NBA uses a lottery-based draft system to determine the order of drafting."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="188dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@raw/all_star_logo" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="openMenu"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@raw/menu" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="412dp"
+        android:layout_height="62dp"
+        android:background="#A6101010"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/twitterLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="6dp"
+            android:background="#133880"
+            android:onClick="openTwitter"
+            app:srcCompat="@raw/twitter" />
+
+        <ImageButton
+            android:id="@+id/facebookLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:background="#133880"
+            android:onClick="openFacebook"
+            app:srcCompat="@raw/facebook" />
+
+        <ImageButton
+            android:id="@+id/instaLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:background="#133880"
+            android:onClick="openInsta"
+            app:srcCompat="@raw/instagram" />
+
+        <ImageButton
+            android:id="@+id/youtubeLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:background="#133880"
+            android:onClick="openYoutube"
+            app:srcCompat="@raw/youtube" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="344dp"
+        android:layout_height="733dp"
+        android:background="#34c5ff"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="349dp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:onClick="openAboutUs"
+            android:text="   About us"
+            android:textColor="#1d428a"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="349dp"
+            android:layout_height="67dp"
+            android:background="#1d428a"
+            android:gravity="center|left"
+            android:onClick="openBooking"
+            android:text="   Booking info"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="349dp"
+            android:layout_height="67dp"
+            android:background="#c8102e"
+            android:gravity="center|left"
+            android:onClick="openDirections"
+            android:text="   Getting There"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintBottom_toTopOf="@+id/button8"
+            tools:layout_editor_absoluteX="-3dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="347dp"
+            android:layout_height="67dp"
+            android:background="@android:color/white"
+            android:gravity="center|left"
+            android:onClick="openSchedule"
+            android:text="   Schedule"
+            android:textColor="#1d428a"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="188dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@raw/all_star_logo" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="closeMenu"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@raw/close" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="348dp"
+            android:layout_height="67dp"
+            android:background="#1d428a"
+            android:gravity="center|left"
+            android:onClick="openHome"
+            android:text="   Home"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            app:layout_constraintBottom_toTopOf="@+id/button6"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="270dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
