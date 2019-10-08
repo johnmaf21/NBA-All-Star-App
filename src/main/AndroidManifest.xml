@@ -26,7 +26,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDNATsJC8fkugXCDexXlulDqqvVpv53p8Q"/>
+            android:value="Enter the api key here"/>
 
         <activity android:name=".AboutUsActivity"></activity>
         <activity android:name=".BookingActivity" />
