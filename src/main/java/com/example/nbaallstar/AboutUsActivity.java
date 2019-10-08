@@ -29,21 +29,21 @@ public class AboutUsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about_us);
         ImageView imageView = findViewById(R.id.imageView6);
         Glide.with(this).load(R.raw.chicago).into(imageView);
-//        clk = (ImageButton) findViewById(R.id.imageButton3);
-//        videoView = (VideoView) findViewById(R.id.videoView2);
-////        String videoPath = "android.resource://com.example.nbaallstar/"+R.raw.tour_guide;
-////        Uri uri = Uri.parse(videoPath);
-////        videoView.setVideoURI(uri);
-//        videoView.seekTo( 2100 );
-//
-//        mediaController = new MediaController(this);
-//        mediaController1 = new MediaController(this);
-//        clk1 = (ImageButton) findViewById(R.id.imageButton5);
-//        videoView1 = (VideoView) findViewById(R.id.videoView3);
-//        String videoPath1 = "android.resource://com.example.nbaallstar/"+R.raw.promo;
-//        Uri uri1 = Uri.parse(videoPath1);
-//        videoView1.setVideoURI(uri1);
-//        videoView1.seekTo( 2100 );
+/*      clk = (ImageButton) findViewById(R.id.imageButton3);
+        videoView = (VideoView) findViewById(R.id.videoView2);
+        String videoPath = "android.resource://com.example.nbaallstar/"+R.raw.tour_guide;
+        Uri uri = Uri.parse(videoPath);
+        videoView.setVideoURI(uri);
+        videoView.seekTo( 2100 );
+
+        mediaController = new MediaController(this);
+        mediaController1 = new MediaController(this);
+        clk1 = (ImageButton) findViewById(R.id.imageButton5);
+        videoView1 = (VideoView) findViewById(R.id.videoView3);
+        String videoPath1 = "android.resource://com.example.nbaallstar/"+R.raw.promo;
+        Uri uri1 = Uri.parse(videoPath1);
+        videoView1.setVideoURI(uri1);
+        videoView1.seekTo( 2100 );*/
         constraintLayout = (ConstraintLayout) findViewById(R.id.aboutLayout);
         constraintLayout1 = (ConstraintLayout) findViewById(R.id.menuLayout);
         constraintLayout1.setVisibility(View.INVISIBLE);
